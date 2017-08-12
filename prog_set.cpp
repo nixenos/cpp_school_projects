@@ -21,7 +21,7 @@ void make_prep(string prog_name){
     ofstream makefile;
     makefile.open("Makefile");
     makefile << "all:" << endl;
-    makefile << "\tg++ "<< prog_name << ".cpp -std=c++11 -O2 -Wall -g ";
+    makefile << "\tg++ "<< prog_name << ".cpp -std=gnu++1z -O2 -Wall -g ";
     makefile << "-o " << prog_name;
     makefile.close();
 }
