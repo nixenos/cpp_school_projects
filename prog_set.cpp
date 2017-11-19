@@ -34,6 +34,7 @@ void file_prep(string prog_name){
     prog_file << "using namespace std;" << endl;
     prog_file << "int main(){" << endl;
     prog_file << "\treturn 0;\n";
+    prog_file << "\t//Happy coding ^.^\n";
     prog_file << "}";
     prog_file.close();
     system (("mv main.cpp "+prog_name+".cpp").c_str());
