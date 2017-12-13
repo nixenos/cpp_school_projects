@@ -33,6 +33,7 @@ void file_prep(string prog_name){
     prog_file << "#include <unistd.h>" << endl;
     prog_file << "using namespace std;" << endl;
     prog_file << "int main(){" << endl;
+    prog_file << "\tios_base::sync_with_stdio(0);" << endl;
     prog_file << "\treturn 0;\n";
     prog_file << "\t//Happy coding ^.^\n";
     prog_file << "}";
