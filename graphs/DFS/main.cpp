@@ -8,9 +8,9 @@ bool visited[MAX_N];
 void DFS(int v){
 	visited[v]=true;
 	for(int i=0; i<V[v].size(); i++){
-		if(!visited[V[i]]){
-			visited[V[i]]=true;
-			DFS(V[i]);
+		if(!visited[V[v][i]]){
+			visited[V[v][i]]=true;
+			DFS(V[v][i]);
 		}
 	}
 }
